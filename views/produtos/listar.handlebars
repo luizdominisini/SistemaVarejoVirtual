@@ -1,0 +1,28 @@
+<h1 class="text-center my-3">Lista de Produtos</h1>
+<table class="table">
+    <div class="row">
+        <div class="col-12">
+            <thead>
+            </thead>
+            <tbody>
+                {{#each produto}}
+                <tr>
+                    <th>
+                        <center><img src="{{this.link}}" alt="mostrar imagem" width=150 height=150><br>
+                            <strong>{{this.nome}}</strong><br>
+                            {{this.descricao}} <br>
+                            R${{this.preco}} <br>
+                            cod. Produto:{{this.id_produto}}<br>
+                            <a href="/carrinho/Adicionar"><img src="https://svgsilh.com/svg_v2/1001596.svg" width=30
+                                    height=25 alt="mostrar imagem" /></a>
+                    </th>
+                    <form class="borde-0 m-0" action="/carrinho/Adicionar" method="POST">
+                        <input type="hidden" name="id_produto" value={{this.id_produto}}>
+                    </form>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </div>
+    </div>
+</table>
