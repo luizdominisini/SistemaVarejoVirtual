@@ -2,7 +2,7 @@
 Frontend de um sistema de varejo virtual.
 Fiz esse projeto como uma forma de aplicar tudo que estudei, criando rotas dinâmicas.
 
-##Tecnologias utilizadas
+#Tecnologias utilizadas
 -Node.js
 -Express
 -Handlebars
